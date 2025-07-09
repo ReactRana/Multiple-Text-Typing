@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <span class="text first-text">I am a</span>
+      <span class="text second-text">Developer</span>
+    </div>
+
+    <script>
+      const second_text = document.querySelector(".second-text");
+      const change_text = () => {
+        setTimeout(() => {
+          second_text.textContent = "Developer";
+        }, 0);
+        setTimeout(() => {
+          second_text.textContent = "Programmer";
+        }, 4000);
+        setTimeout(() => {
+          second_text.textContent = "ProCoder";
+        }, 8000);
+      };
+      change_text();
+      setInterval(change_text, 12000);
+    </script>
+  </body>
+</html>
